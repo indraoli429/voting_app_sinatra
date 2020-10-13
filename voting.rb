@@ -13,6 +13,11 @@ get '/' do
   erb :index
 end
 
+get '/daidon' do
+  @title = 'Yo Nepali daidon ho'
+  erb :daidon
+end
+
 post '/cast' do
   @title = 'Thanks for casting your vote!'
   @vote  = params['vote']
